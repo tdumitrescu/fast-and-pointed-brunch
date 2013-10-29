@@ -1,4 +1,11 @@
 exports.config =
+
+  server:
+    path: 'app.js.coffee'
+    port: 3333
+    base: '/'
+    run:  yes
+
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
     assets: /^app\/assets\//
