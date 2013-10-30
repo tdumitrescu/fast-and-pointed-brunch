@@ -1,7 +1,7 @@
 exports.config =
 
   server:
-    path: 'app.js.coffee'
+    path: 'server/server.coffee'
     port: 3333
     base: '/'
     run:  yes
