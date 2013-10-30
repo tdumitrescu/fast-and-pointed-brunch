@@ -16,7 +16,7 @@ app = module.exports = express()
 
 # all environments
 app.set 'port', process.env.PORT || 3000
-app.set 'views', path.join(__dirname, '..', 'app')
+app.set 'views', path.join(__dirname, '..', 'client')
 app.set 'view engine', 'jade'
 app.use express.logger('dev')
 app.use express.bodyParser()
