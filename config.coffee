@@ -8,29 +8,30 @@ exports.config =
 
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
-    assets: /^app\/assets\//
+    assets: /^client\/assets\//
   modules:
     definition: false
     wrapper: false
   paths:
-    public: '_public'
+    public:  '_public'
+    watched: ['client', 'vendor']
   files:
     javascripts:
       joinTo:
-        'js/app.js': /^app/
+        'js/app.js': /^client/
         'js/vendor.js': /^(bower_components|vendor)/
 
     stylesheets:
       joinTo:
-        'css/app.css': /^(app|vendor|bower_components)/
+        'css/app.css': /^(client|vendor|bower_components)/
       order:
         before: [
-          'app/styles/app.less'
+          'client/styles/app.less'
         ]
 
     templates:
       joinTo: 
-        'js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
+        'js/dontUseMe' : /^client/ # dirty hack for Jade compiling.
 
   plugins:
     jade:
