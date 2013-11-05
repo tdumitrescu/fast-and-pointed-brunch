@@ -14,13 +14,15 @@ app = module.exports = express()
 # Configuration
 #
 
+assetsPath = path.join(__dirname, '..', '_public')
+
 # all environments
 app.set 'views', path.join(__dirname, '..', 'client')
 app.set 'view engine', 'jade'
 app.use express.logger('dev')
 app.use express.bodyParser()
 app.use express.methodOverride()
-app.use express.static(path.join(__dirname, '..', '_public'))
+app.use express.static(assetsPath)
 app.use app.router
 
 # development only
@@ -35,14 +37,11 @@ if app.get('env') is 'development'
 # Routes
 #
 
-# serve index and view partials
-app.get '/', routes.index
-
 # JSON API
 app.get '/api/name', api.name
 
-# redirect all others to the index (HTML5 history)
-app.get '*', routes.index
+# serve index for all other routes
+app.get '*', (req, res) -> res.sendfile "#{assetsPath}/index.html"
 
 
 #
