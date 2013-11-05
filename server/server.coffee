@@ -16,8 +16,6 @@ app = module.exports = express()
 assetsPath = path.join(__dirname, '..', '_public')
 
 # all environments
-app.set 'views', path.join(__dirname, '..', 'client')
-app.set 'view engine', 'jade'
 app.use express.logger('dev')
 app.use express.bodyParser()
 app.use express.methodOverride()
