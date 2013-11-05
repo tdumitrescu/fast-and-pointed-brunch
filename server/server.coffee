@@ -3,10 +3,9 @@
 #
 
 express = require 'express'
-routes  = require './routes'
-api     = require './routes/api'
 http    = require 'http'
 path    = require 'path'
+api     = require './api'
 
 app = module.exports = express()
 
