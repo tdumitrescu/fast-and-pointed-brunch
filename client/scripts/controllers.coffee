@@ -9,7 +9,7 @@ angular.module('app.controllers', [])
     method: 'GET'
     url:    '/api/name'
   .success (data, status, headers, config) ->
-    $scope.name = data.name;
+    $scope.name = data.name
   .error (data, status, headers, config) ->
     $scope.name = 'Error!'
 
