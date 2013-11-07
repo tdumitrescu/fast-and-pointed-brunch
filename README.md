@@ -16,7 +16,14 @@ npm start
 
 ## Architecture / Directories
 
-TODO
+The app-specific code is divided into two main directories:
+- `client/`: the AngularJS code which runs in the browser, along with stylesheets and view templates. The entry point of the Angular app is declared and configured in `client/app.coffee`, and further app code lives by default in `client/scripts`.
+
+- `server/`: the Express code which runs on the server with Node.js. The Express app is declared and configured in `server/server.coffee`. Code for JSON API actions lives in `server/api.coffee`.
+
+The most significant particularity of this configuration is the enforced separation of (server-side) data and (client-side) presentation. The Express server does *no* view-rendering; it merely provides JSON API endpoints for the client. All HTML, CSS, and JS is pre-compiled by Brunch and served in static asset files. This includes all the Coffeescript, Jade, and Less files in `client/` as well as vendored asset dependencies installed by Bower (such as jQuery and the AngularJS framework code).
+
+In both client and server directories, the file structure is set up for a simple single-resource app. A more expansive app would benefit from further separation into resource-based subdirectories and modules (for example, splitting `server/api.coffee` into `server/api/widgets.coffee` and `server/api/wombats.coffee`).
 
 ## Example App
 
