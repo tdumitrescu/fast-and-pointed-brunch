@@ -4,7 +4,7 @@
 
 angular.module('app.controllers', [])
 
-.controller('AppCtrl', ($scope, $http) ->
+.controller('AppCtrl', ["$scope", "$http", ($scope, $http) ->
   $http
     method: 'GET'
     url:    '/api/name'
@@ -12,10 +12,12 @@ angular.module('app.controllers', [])
     $scope.name = data.name
   .error (data, status, headers, config) ->
     $scope.name = 'Error!'
+  ])
 
-).controller('MyCtrl1', ($scope) ->
+.controller('MyCtrl1', ["$scope", ($scope) ->
   # write Ctrl here
+  ])
 
-).controller('MyCtrl2', ($scope) ->
+.controller('MyCtrl2', ["$scope", ($scope) ->
   # write Ctrl here
-)
+  ])
