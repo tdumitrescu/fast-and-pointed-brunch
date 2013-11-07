@@ -18,6 +18,10 @@ npm start
 
 TODO
 
+## Example App
+
+A simple [blog](https://github.com/tdumitrescu/angular-express-coffee-blog) using this template, based on an [example](https://github.com/btford/angular-express-blog) by Brian Ford.
+
 ## Further documentation
 
 See the more extensive documentation of the parent projects:
