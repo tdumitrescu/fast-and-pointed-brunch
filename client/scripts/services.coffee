@@ -2,6 +2,6 @@
 
 ### Sevices ###
 
-angular.module('app.services', [])
+angular.module('myApp.services', [])
 
 .factory 'version', -> "0.1"

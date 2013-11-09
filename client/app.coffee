@@ -1,13 +1,13 @@
 'use strict'
 
 # Declare app level module which depends on filters, and services
-angular.module('app', [
+angular.module('myApp', [
   'ngCookies'
   'ngResource'
-  'app.controllers'
-  'app.directives'
-  'app.filters'
-  'app.services'
+  'myApp.controllers'
+  'myApp.directives'
+  'myApp.filters'
+  'myApp.services'
   'partials'
 ])
 .config ($routeProvider, $locationProvider) ->

@@ -2,7 +2,7 @@
 
 ### Controllers ###
 
-angular.module('app.controllers', [])
+angular.module('myApp.controllers', [])
 
 .controller('AppCtrl', ["$scope", "$http", ($scope, $http) ->
   $http
