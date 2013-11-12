@@ -2,7 +2,7 @@
 
 # jasmine specs for filters go here
 describe "filter", ->
-  beforeEach(module "app.filters")
+  beforeEach(module "myApp.filters")
 
   describe "interpolate", ->
 
@@ -11,6 +11,6 @@ describe "filter", ->
       return
     ))
 
-    it "should replace VERSION", inject((interpolateFilter) ->
+    it "replaces VERSION", inject((interpolateFilter) ->
       expect(interpolateFilter("before %VERSION% after")).toEqual "before TEST_VER after"
     )
