@@ -1,20 +1,14 @@
 'use strict'
 
-# jasmine specs for controllers go here
-
-# TODO figure out how to test Controllers that use modules
 describe "controllers", ->
+  beforeEach(module "myApp.controllers")
 
-  beforeEach(module "app.controllers")
-
-  describe "MyCtrl1", ->
-
-    it "should make scope testable", inject ($rootScope, $controller) ->
+  describe "AppCtrl", ->
+    it "fetches name from the backend", inject ($rootScope, $controller, $httpBackend) ->
       scope = $rootScope.$new()
-      ctrl = $controller "MyCtrl1",
-        $scope: scope,
-      expect(scope.onePlusOne).toEqual(2)
 
-  describe "MyCtrl2", ->
+      $httpBackend.expectGET('/api/name').respond name: "bla"
+      ctrl = $controller "AppCtrl", $scope: scope
+      $httpBackend.flush()
 
-    it "should..."
+      expect(scope.name).toEqual "bla"
