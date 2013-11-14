@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tdumitrescu/fast-and-pointed-brunch.png?branch=master)](https://travis-ci.org/tdumitrescu/fast-and-pointed-brunch)
+
 # Fast and Pointed Brunch
 
 [Brunch](http://brunch.io/)-based project template with [AngularJS](http://angularjs.org) on the frontend and a lean [Express](http://expressjs.com) backend serving only JSON API endpoints. Largely a combination of [Angular Express Seed](https://github.com/btford/angular-express-seed) and [Angular Brunch Seed](https://github.com/scotch/angular-brunch-seed), with some explicit client/server separation and [CoffeeScript](http://coffeescript.org).
