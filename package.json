@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node_modules/.bin/brunch watch --server",
-    "test": "node_modules/.bin/karma start test/karma.conf.js && node_modules/.bin/karma start test/karma-e2e.conf.js"
+    "test": "node_modules/.bin/brunch build && node_modules/.bin/karma start test/karma.conf.js && node_modules/.bin/karma start test/karma-e2e.conf.js"
   },
   "dependencies": {
     "express": "~3.2.6",
