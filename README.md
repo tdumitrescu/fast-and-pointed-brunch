@@ -4,6 +4,8 @@
 
 [Brunch](http://brunch.io/)-based project template with [AngularJS](http://angularjs.org) on the frontend and a lean [Express](http://expressjs.com) backend serving only JSON API endpoints. Largely a combination of [Angular Express Seed](https://github.com/btford/angular-express-seed) and [Angular Brunch Seed](https://github.com/scotch/angular-brunch-seed), with some explicit client/server separation and [CoffeeScript](http://coffeescript.org).
 
+For a discussion of the rationale behind the architecture, see [http://cmme.org/tdumitrescu/blog/2013/11/lean-angular-express-architecture/](http://cmme.org/tdumitrescu/blog/2013/11/lean-angular-express-architecture/).
+
 ## Usage
 
 Install in the current directory:
