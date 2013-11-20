@@ -38,7 +38,8 @@
     "karma": "~0.9.4",
     "karma-coffee-preprocessor": "~0.0.2",
     "karma-ng-scenario": "~0.0.2",
-    "jasmine-node": "~1.11.0",
+    "mocha": "~1.14.0",
+    "expect.js": "~0.2.0",
     "request": "~2.27.0"
   }
 }
