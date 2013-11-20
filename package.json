@@ -37,6 +37,7 @@
 
     "karma": "~0.9.4",
     "karma-coffee-preprocessor": "~0.0.2",
-    "karma-ng-scenario": "~0.0.2"
+    "karma-ng-scenario": "~0.0.2",
+    "jasmine-node": "~1.11.0"
   }
 }
