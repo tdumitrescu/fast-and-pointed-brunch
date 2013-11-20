@@ -13,8 +13,7 @@ module.exports = function(karma) {
 
     // list of files / patterns to load in the browser
     files: [
-        'test/e2e/**/*.js',
-        'test/e2e/**/*.coffee'
+      'test/e2e/**/*.spec.*'
     ],
 
     // list of files to exclude
