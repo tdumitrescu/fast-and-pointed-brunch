@@ -10,7 +10,7 @@ For a discussion of the rationale behind the architecture, see [http://cmme.org/
 
 Install in the current directory:
 ```sh
-brunch new https://github.com/tdumitrescu/fast-and-pointed-brunch
+brunch new gh:tdumitrescu/fast-and-pointed-brunch
 ```
 
 Run:
