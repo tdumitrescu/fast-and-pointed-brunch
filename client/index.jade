@@ -2,7 +2,9 @@ extends layout
 
 block body
   div(ng-controller='AppCtrl')
-    h2 Hello {{name}}
+    h2
+      | Hello 
+      span(ng-bind='name')
     ul.menu
       li
         a(href='view1') view1
