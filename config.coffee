@@ -25,7 +25,7 @@ exports.config =
       joinTo:
         'css/app.css': /^(client|vendor|bower_components)/
       order:
-        before: [
+        after: [
           'client/styles/app.less'
         ]
 
