@@ -14,7 +14,7 @@
     "test":    "node_modules/.bin/mocha test/server && node_modules/.bin/karma start test/karma.conf.js && node_modules/.bin/karma start test/karma-e2e.conf.js"
   },
   "dependencies": {
-    "express": "~3.2.6",
+    "express": "~3.4.7",
     "jade": "~0.33",
     "coffee-script": "~1.6",
     "brunch": "~1.7",
